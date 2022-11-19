@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        *,body{
+            padding: 0;
+            margin:0;
+        }
+        .main{
+            width: 1000px;
+            height: 1600px;
+            position:relative;
+            background-image: url('img/beijing.png');
+            background-size: cover;
+        }
+       #img{
+           background-image: url('img/dao.PNG');
+           position:absolute;
+           background-size: cover;
+           left: -300px;
+           top:50px;
+           width:300px;
+           height:300px;
+           
+           transition:all 1.5s ease;
+       }
+       .title{
+           width:100%;
+           text-align:center;
+           padding-top:20px;
+           letter-spacing:10px;
+       }
+       .main-p{
+           width:100%;
+           text-align:center;
+       }
+       .content{
+           width: 270px;
+           height:200px;
+           position:absolute;
+           left:320px;
+           top:100px;
+       }
+       .title-cont{
+           width: 90%;
+           height:40px;
+           line-height: 40px;
+           border-bottom:1px solid #CD3333;
+           color:#CD3333;
+           padding-left:10px;
+       }
+       .content p{
+           line-height: 28px;
+           font-size: 14px;
+           padding-left:10px;
+       }
+    </style>
+    
+   <script type="text/javascript">
+        window.onload = function(){
+          show();
+        }
+        function show(){
+            document.getElementById("img").style.left="0px";
+        }
+       
+   </script>
+  </head>
+  
+  <body>    
+    <div class="main">
+        <h2 class="title">联系我们 </h2>
+        <p class="main-p">CONTACT US</p>
+        <div id="img"></div>
+        <div class="content">
+            <h4 class="title-cont">北京某某酒业有限公司</h4>
+            <p>联系电话：400-xxx-1080</p>
+            <p>Email： kefu@xxxx.com</p>
+            <p>商务合作：marketing@xxxx.com</p>
+            <p>网站地址：http://www.xxxx.com</p>
+        </div>
+        
+    </div>
+  </body>
+</html>
